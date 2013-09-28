@@ -40,6 +40,6 @@ var colorDivs = function() {
     chrome.tabs.getSelected(null, function(tab){
         chrome.tabs.sendMessage(tab.id, {type: "colors-div", color: "#F00"});
         // setting a badge
-        chrome.browserAction.setBadgeText({text: "red!"});
+        //chrome.browserAction.setBadgeText({text: "red!"});
     });
 }
